@@ -18,3 +18,19 @@ from datetime import timedelta
 
 
 # Begin your solution here...
+population: int = int(input("Population: "))
+doses_administered: int = int(input("Doses administered: "))
+doses_day: int = int(input("Doses per day: "))
+target_percent: int = int(input("Target percent vaccinatied: "))
+
+percent: int = int(target_percent / population)
+people_total: int = int(percent * population)
+people_left: float = int(people_total - (.5 * doses_administered))
+doses_needed: int = round(int(people_left * 2))
+days: int = int(doses_day / doses_needed)
+
+today: datetime = datetime.today()
+days_left: timedelta = timedelta(days)
+future: datetime = today + days_left
+print(future.strftime("%B %d, %Y"))
+
