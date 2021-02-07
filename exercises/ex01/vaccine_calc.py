@@ -31,7 +31,7 @@ doses_needed: int = int(people_left * 2)
 days: int = round(doses_needed / doses_day)
 
 days_updated: str = str(days)
-percent_updated: str = str (target_percent)
+percent_updated: str = str(target_percent)
 first = "We will reach "
 second = "% vaccination in "
 third = " days, which falls on "
@@ -41,4 +41,3 @@ today: datetime = datetime.today()
 days_left: timedelta = timedelta(days)
 future: datetime = today + days_left
 print(first + percent_updated + second + days_updated + third + future.strftime("%B %d, %Y"))
-

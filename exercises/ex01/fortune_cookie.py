@@ -15,7 +15,7 @@ from random import randint
 # Begin your solution here...
 print("Your fortune cookie says... ")
 
-fortune_cookie: int = randint(1,4)
+fortune_cookie: int = randint(1, 4)
 
 if fortune_cookie == 1:
     print("good things are coming your way")
@@ -29,5 +29,3 @@ else:
             print("look forward to tomorrow")
 
 print("Now, go spread positive vibes! ")
-
-
