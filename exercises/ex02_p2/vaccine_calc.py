@@ -34,8 +34,6 @@ def days_to_target(population: int, doses: int, doses_per_day: int, target: int)
     days: int = round(doses_needed / doses_per_day)
     return days
     
-
-
 # TODO 3: Define future_date function
 def future_date(days_out: int) -> str:
     today: datetime = datetime.today()
@@ -44,7 +42,5 @@ def future_date(days_out: int) -> str:
     final: str = future.strftime("%B %d, %Y")
     return final
     
-
-
 if __name__ == "__main__":
     main()
